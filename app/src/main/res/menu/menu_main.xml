@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/action_create_order"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@mipmap/ic_launcher"
         android:orderInCategory="1"
         android:title="Create order"
         app:showAsAction="ifRoom" />
@@ -21,6 +21,13 @@
         android:icon="@mipmap/ic_launcher_round"
         android:orderInCategory="3"
         android:title="Nothing"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_absolutely_nothing"
+        android:icon="@mipmap/ic_launcher_round"
+        android:orderInCategory="4"
+        android:title="Nothing2"
+        app:showAsAction="never" />
 
 </menu>

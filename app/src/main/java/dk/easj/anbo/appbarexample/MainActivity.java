@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
     }
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -42,11 +43,15 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_nothing_really:
                 Toast.makeText(this, "Menu ...", Toast.LENGTH_LONG).show();
                 return true;
+            case R.id.action_absolutely_nothing:
+                Toast.makeText(this, "Menu ...", Toast.LENGTH_LONG).show();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 
+    // Head First, 2nd, page 333
     private void setShareActionIntent(String text) {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
