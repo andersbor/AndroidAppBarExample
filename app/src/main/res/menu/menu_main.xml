@@ -18,16 +18,16 @@
 
     <item
         android:id="@+id/action_nothing_really"
-        android:icon="@mipmap/ic_launcher_round"
+        android:icon="@android:drawable/btn_dialog"
         android:orderInCategory="3"
-        android:title="Nothing"
-        app:showAsAction="never" />
+        android:title="Dialog"
+        app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/action_absolutely_nothing"
-        android:icon="@mipmap/ic_launcher_round"
+        android:icon="@android:drawable/ic_menu_save"
         android:orderInCategory="4"
-        android:title="Nothing2"
-        app:showAsAction="never" />
+        android:title="Save"
+        app:showAsAction="ifRoom" />
 
 </menu>
