@@ -13,21 +13,23 @@
         android:id="@+id/action_share"
         android:orderInCategory="2"
         android:title="Share"
-        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        app:actionProviderClass="androidx.appcompat.widget.ShareActionProvider"
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/action_nothing_really"
-        android:icon="@android:drawable/btn_dialog"
+        android:id="@+id/action_email"
+        android:icon="@android:drawable/ic_dialog_email"
         android:orderInCategory="3"
-        android:title="Dialog"
+        android:title="Email"
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/action_absolutely_nothing"
+        android:id="@+id/action_save"
         android:icon="@android:drawable/ic_menu_save"
         android:orderInCategory="4"
         android:title="Save"
         app:showAsAction="ifRoom" />
+
+    <!-- https://stackoverflow.com/questions/18494012/where-are-the-android-icon-drawables-within-the-sdk -->
 
 </menu>

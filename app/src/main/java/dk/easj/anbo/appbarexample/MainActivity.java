@@ -1,14 +1,15 @@
 package dk.easj.anbo.appbarexample;
 
 import android.content.Intent;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.ShareActionProvider;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.ShareActionProvider;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.MenuItemCompat;
 
 // Adapted from Head First Android Application Development, 2nd edition
 // Chapter 8
@@ -22,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -40,11 +40,11 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, OrderActivity.class);
                 startActivity(intent);
                 return true; // true: menu processing done, no further actions
-            case R.id.action_nothing_really:
-                Toast.makeText(this, "Menu ...", Toast.LENGTH_LONG).show();
+            case R.id.action_email:
+                Toast.makeText(this, "Menu ... email", Toast.LENGTH_LONG).show();
                 return true;
-            case R.id.action_absolutely_nothing:
-                Toast.makeText(this, "Menu ...", Toast.LENGTH_LONG).show();
+            case R.id.action_save:
+                Toast.makeText(this, "Menu ... save", Toast.LENGTH_LONG).show();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
